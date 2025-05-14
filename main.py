@@ -20,7 +20,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 app = FastAPI()
 
 # Mount static files
-app.mount("/static", StaticFiles(directory="public"), name="static")
+# app.mount("/static", StaticFiles(directory="public"), name="static")
 
 # Templates
 templates = Jinja2Templates(directory=".")
