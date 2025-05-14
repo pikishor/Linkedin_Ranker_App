@@ -13,8 +13,8 @@ from supabase import create_client, Client
 load_dotenv()
 
 # Initialize Supabase client
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_URL = "https://hwzjlbmppzyyhwxevdgq.supabase.co" #os.getenv("SUPABASE_URL")
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh3empsYm1wcHp5eWh3eGV2ZGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyMzMyMjEsImV4cCI6MjA2MjgwOTIyMX0.0FZdHMJlusgAsIi4P5z5w-ssU1qLSd6FyQNmS6zmV8s" #os.getenv("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 app = FastAPI()
